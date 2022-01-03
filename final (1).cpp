@@ -29,7 +29,42 @@ int main() {
   int control;
   g._init_();
   bool open = true;
+  
+  //default
+  g.addNode();
+  man.id = 0;
+  man.dob = "22/11/2000";
+  man.name = "thanh";
+  man.email = "thanhtranngoc2211@gmail.com";
+  man.field = "AI";
+  man.number = "0822455477";
+  man.work = "NAVER";
+  a.push_back(man);
+  // 2
+  g.addNode();
+  man.id = 1;
+  man.dob = "17/09/2000";
+  man.name = "huyen";
+  man.email = "huyen.dt@gmail.com";
+  man.field = "Marketing";
+  man.number = "0335428632";
+  man.work = "PG";
+  a.push_back(man);
+  // 3
+  g.addNode();
+  man.id = 2;
+  man.dob = "10/11/2003";
+  man.name = "linh";
+  man.email = "linh.ngu@gmail.com";
+  man.field = "Law";
+  man.number = "0915234856";
+  man.work = "PG";
+  a.push_back(man);
+  w.years = 2;
+  w.papers = 3;
 
+  g.addEdge("thanh","huyen",a,w);
+  //
   while (open){
     cout << "----------------------------------" <<endl;
     cout << "an 1 de them nut"<<endl;
